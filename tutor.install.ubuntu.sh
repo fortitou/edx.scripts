@@ -27,6 +27,9 @@
 #     tutor local logs nginx
 #---------------------------------------------------------
 
+TUTOR_RELEASE="1.25.4"
+COMPOSE_RELEASE="3.11.5"
+
 #Install Docker: https://docs.docker.com/install/linux/docker-ce/ubuntu/
 #================================
 # this line looks for, and remove any existing installation of docker.
@@ -57,7 +60,7 @@ EOF
 
 #Install Docker Composer: https://docs.docker.com/compose/install/
 #================================
-sudo curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo curl -L "https://github.com/docker/compose/releases/download/${COMPOSE_RELEASE}/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 # test installation
 docker-compose --version
@@ -65,7 +68,7 @@ docker-compose --version
 
 #Install Tutor: https://docs.tutor.overhang.io/install.html
 #================================
-sudo curl -L "https://github.com/overhangio/tutor/releases/download/v3.6.0/tutor-$(uname -s)_$(uname -m)" -o /usr/local/bin/tutor
+sudo curl -L "https://github.com/overhangio/tutor/releases/download/${TUTOR_RELEASE}/tutor-$(uname -s)_$(uname -m)" -o /usr/local/bin/tutor
 sudo chmod +x /usr/local/bin/tutor
 
 echo "===================================================================="
