@@ -27,8 +27,8 @@
 #     tutor local logs nginx
 #---------------------------------------------------------
 
-TUTOR_RELEASE="1.25.4"
-COMPOSE_RELEASE="3.11.5"
+COMPOSE_RELEASE="1.25.4"
+TUTOR_RELEASE="3.11.5"
 
 #Install Docker: https://docs.docker.com/install/linux/docker-ce/ubuntu/
 #================================
