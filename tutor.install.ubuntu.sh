@@ -28,7 +28,7 @@
 #---------------------------------------------------------
 
 COMPOSE_RELEASE="1.25.4"
-TUTOR_RELEASE="3.11.5"
+TUTOR_RELEASE="v3.11.5"
 
 #Install Docker: https://docs.docker.com/install/linux/docker-ce/ubuntu/
 #================================
